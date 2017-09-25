@@ -80,7 +80,7 @@ const NOUN = [
   'Disbelief',
   'Tragedy',
   'Fear',
-  'Depresstion',
+  'Depression',
   'Demention',
   'Madness',
   'Nightmare',
