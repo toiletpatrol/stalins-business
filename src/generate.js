@@ -73,7 +73,8 @@ const ADJ = [
   'Absurd',
   'Crud',
   'Crucial',
-  'Night'
+  'Night',
+  'Double'
 ];
 
 const NOUN = [
@@ -186,6 +187,7 @@ const NOUN = [
   'Trap',
   'Race',
   'Fuck',
+  'Standard',
 
   // Животные
   'Dog',
