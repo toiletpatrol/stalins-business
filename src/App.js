@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
 import generate from './generate.js';
 import './App.css';
 
@@ -9,6 +10,11 @@ class App extends Component {
     this.state = { title: generate(), stack: [] };
     this.handleOnClickNext = this.handleOnClickNext.bind(this);
     this.handleOnClickPrev = this.handleOnClickPrev.bind(this);
+  }
+
+  componentDidMount() {
+    ReactGA.initialize('UA-107082021-1');
+    ReactGA.pageview(window.location.pathname);
   }
 
   handleOnClickNext() {
