@@ -67,11 +67,12 @@ const ADJ = [
   'Disfunctional',
   'Poor',
   'Tragic',
-  'Communist'
+  'Communist',
+  'Savage'
 ];
 
 const NOUN = [
-  // Нищета болезни
+  // Нищета болезни страдание
   'Sick',
   'Breed',
   'Disgust',
@@ -89,6 +90,7 @@ const NOUN = [
   'Trauma',
   'Poverty',
   'Misery',
+  'Assholes',
 
   // Эмоции
   'Attention',
