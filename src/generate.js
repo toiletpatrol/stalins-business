@@ -74,7 +74,12 @@ const ADJ = [
   'Crud',
   'Crucial',
   'Night',
-  'Double'
+  'Double',
+  'Urunal',
+  'Uranium',
+  'Cellar',
+  'TV',
+  'Cold'
 ];
 
 const NOUN = [
@@ -129,6 +134,7 @@ const NOUN = [
   'Court',
   'Stab',
   'Butchers',
+  'Crime',
 
   // Война/борьба
   'Pact',
@@ -203,6 +209,7 @@ const NOUN = [
   'Creatures',
 
   'Gas',
+  'Club',
 
   'Eye',
   'Hand',
