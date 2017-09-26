@@ -173,7 +173,7 @@ const NOUN = [
   'Silence',
   'Breakout',
   'Lie',
-  'Liers',
+  'Liars',
   'School',
   'College',
   'Trap',
