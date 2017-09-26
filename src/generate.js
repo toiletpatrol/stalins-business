@@ -15,6 +15,7 @@ const ADJ = [
   'Abused',
   'Total',
   'Fucked',
+  'Fucked Up',
   'Pure',
   'Rational',
   'Masturbating',
@@ -68,7 +69,11 @@ const ADJ = [
   'Poor',
   'Tragic',
   'Communist',
-  'Savage'
+  'Savage',
+  'Absurd',
+  'Crud',
+  'Crucial',
+  'Night'
 ];
 
 const NOUN = [
@@ -91,6 +96,7 @@ const NOUN = [
   'Poverty',
   'Misery',
   'Assholes',
+  'Bastards',
 
   // Эмоции
   'Attention',
@@ -153,6 +159,7 @@ const NOUN = [
   'Drugs',
   'Sex',
   'Penis',
+  'Butthole',
 
   // Пафосные слова
   'Generation',
@@ -178,6 +185,7 @@ const NOUN = [
   'College',
   'Trap',
   'Race',
+  'Fuck',
 
   // Животные
   'Dog',
@@ -190,6 +198,7 @@ const NOUN = [
   'Wolves',
   'Wolf',
   'Human',
+  'Creatures',
 
   'Gas',
 
