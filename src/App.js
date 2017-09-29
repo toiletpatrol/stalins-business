@@ -43,8 +43,9 @@ class App extends Component {
 
     return (
       <div className="App">
-        <button onClick={this.handleOnClickNext}>New one</button>
-        <h1>{this.state.title}</h1>
+
+        <button onClick={this.handleOnClickNext}>Press me</button>
+        <h1 className="animated">{this.state.title}</h1>
         {list}
       </div>
     );
