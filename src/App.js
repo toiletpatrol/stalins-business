@@ -1,23 +1,17 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import ReactGA from 'react-ga';
 import generate from './generate.js';
 import './App.css';
 
-
-class App extends Component {
-  constructor() {
-    super();
-    this.state = { title: generate(), stack: [] };
-    this.handleOnClickNext = this.handleOnClickNext.bind(this);
-    this.handleOnClickPrev = this.handleOnClickPrev.bind(this);
-  }
+export class App extends PureComponent {
+  state = { title: generate(), stack: [] };
 
   componentDidMount() {
     ReactGA.initialize('UA-107082021-1');
     ReactGA.pageview(window.location.pathname);
   }
 
-  handleOnClickNext() {
+  handleOnClickNext = () => {
     let title = generate();
     let stack = this.state.stack.slice();
 
@@ -25,28 +19,19 @@ class App extends Component {
 
     document.title = title;
     this.setState({ title, stack });
-  }
+  };
 
-  handleOnClickPrev() {
-    let stack = this.state.stack.slice();
-    let title = stack.pop();
-
-    document.title = title;
-    this.setState({ title, stack });
-  }
   render() {
-    let list = [];
-
-    for (let i = this.state.stack.length - 1; i >= 0; i--) {
-      list.push(<p key={i}>{this.state.stack[i]}</p>);
-    }
-
     return (
       <div className="App">
-
+        {/* Button */}
         <button onClick={this.handleOnClickNext}>Press me</button>
+
+        {/* Title */}
         <h1 className="animated">{this.state.title}</h1>
-        {list}
+
+        {/* List */}
+        {this.state.stack.map((title, i) => <p key={i}>{title}</p>)}
       </div>
     );
   }
